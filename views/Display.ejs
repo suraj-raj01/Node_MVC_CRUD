@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+
+<body bgcolor="tomato">
+    <a href="/">Home</a> |
+    <a href="/insert">Insert</a> |
+    <a href="/display">Display</a> |
+    <a href="/update">Update</a> |
+    <a href="/contact">Contact</a>
+    <center>
+        <h1>Employee Display Page</h1>
+    </center>
+    <table align="center" border="1" bgcolor="white" width="600px">
+        <tr>
+            <th>EmpNo</th>
+            <th>EmpName</th>
+            <th>EmpCity</th>
+            <th>EmpSalary</th>
+        </tr>
+        <% Data.forEach((key)=>{
+            %>
+            <tr align="center">
+                <td>
+                    <%=key.empno %>
+                </td>
+                <td>
+                    <%=key.empname %>
+                </td>
+                <td>
+                    <%=key.empcity %>
+                </td>
+                <td>
+                    <%=key.empsalary %>
+                </td>
+            </tr>
+            <% }) %>
+    </table>
+</body>
+
+</html>

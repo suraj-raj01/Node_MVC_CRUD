@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+    <style>
+        #form {
+            width: 400px;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 35px 15px;
+            box-shadow: 0px 0px 10px;
+            border-radius: 10px;
+        }
+
+        #form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 80%;
+        }
+
+        input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 14px;
+            box-shadow: 0px 0px 1px;
+        }
+
+        button {
+            width: 342px;
+            padding: 10px;
+            box-shadow: 0px 0px 1px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body bgcolor="deepskyblue">
+    <a href="/">Home</a> |
+    <a href="/insert">Insert</a> |
+    <a href="/display">Display</a> |
+    <a href="/update">Update</a> |
+    <a href="/contact">Contact</a>
+    <center>
+        <h1>Employee Insert Page</h1>
+    </center>
+    <div id="form">
+        <form  method="post" action="/datasave">
+            <input type="text" name="eno" placeholder="enter employee no">
+            <input type="text" name="nm" placeholder="enter employee name">
+            <input type="text" name="ct" placeholder="enter employee city">
+            <input type="text" name="sal" placeholder="enter employee salary">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
