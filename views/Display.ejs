@@ -5,14 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 10vh;
+            background-color: black;
+            box-shadow: 0px 1px 10px white;
+        }
+        #navbar a{
+            margin-left: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        h1{
+            margin-top: 20px;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        table {
+            width: 70%;
+            margin: 30px auto;
+        }
+
+        th {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        table td {
+            background-color: black;
+            padding: 10px;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
-<body bgcolor="tomato">
-    <a href="/">Home</a> |
-    <a href="/insert">Insert</a> |
-    <a href="/display">Display</a> |
-    <a href="/update">Update</a> |
-    <a href="/contact">Contact</a>
+<body bgcolor="black">
+    <div id="navbar">
+        <a href="/">Home</a> 
+        <a href="/insert">Insert</a> 
+        <a href="/display">Display</a> 
+        <a href="/update">Update</a> 
+        <a href="/contact">Contact</a>
+    </div>
     <center>
         <h1>Employee Display Page</h1>
     </center>

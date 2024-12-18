@@ -4,15 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Update</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 10vh;
+            background-color: black;
+            box-shadow: 0px 1px 10px white;
+        }
+        #navbar a{
+            margin-left: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        h1{
+            margin-top: 20px;
+            color: white;
+        }
+        table {
+            width: 70%;
+            margin: 30px auto;
+        }
+
+        th {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        table td {
+            background-color: black;
+            padding: 5px;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 8px 20px;
+            background-color: black;
+            border: 1px solid;
+            /* box-shadow: 0px 0px 2px white; */
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
-<body bgcolor="cyan">
-    <a href="/">Home</a> |
-    <a href="/insert">Insert</a> |
-    <a href="/display">Display</a> |
-    <a href="/update">Update</a> |
-    <a href="/contact">Contact</a>
+<body bgcolor="black">
+    <div id="navbar">
+        <a href="/">Home</a> 
+        <a href="/insert">Insert</a> 
+        <a href="/display">Display</a> 
+        <a href="/update">Update</a> 
+        <a href="/contact">Contact</a>
+    </div>
     <center>
         <h1>Employee Update Page</h1>
     </center>
@@ -40,9 +100,9 @@
                     <%=key.empsalary %>
                 </td>
                 <td>
-                    <button> <a href="/recdel/?id=<%= key.id %>">
-                            Delete
-                        </a></button>
+                    <a href="/recdel/?id=<%= key.id %>">
+                        <button>Delete</button>
+                    </a>
                 </td>
             </tr>
             <% }) %>
